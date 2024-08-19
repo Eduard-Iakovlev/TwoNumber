@@ -9,15 +9,16 @@ public class ListNode {
       public void initList(ListNode head, int[] data){
         head.val = data[0];
         ListNode current = head;
-        for(int i : data){
-            current.next = new ListNode(i);
-            current = current.next;
+        
+        for(int i = 1; i < data.length; ++i){
+          current.next = new ListNode(data[i]);
+          current = current.next;
         }
       }
 
       public String toString(ListNode list, String listPrint){
        ListNode current = list;
-       current = current.next;
+      
         while(current != null){
             listPrint += String.valueOf(current.val);
             if(current.next != null) listPrint += "->";
