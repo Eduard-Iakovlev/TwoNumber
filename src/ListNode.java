@@ -6,7 +6,7 @@ public class ListNode {
       ListNode(int val, ListNode next) { this.val = val; this.next = next;}
      
 
-      public static void initList(ListNode head, int[] data){
+      public void initList(ListNode head, int[] data){
         head.val = data[0];
         ListNode current = head;
         for(int i : data){

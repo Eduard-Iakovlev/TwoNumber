@@ -1,5 +1,5 @@
 public class PrintSolution {
-    public static void print(int test, int[] listData1, int[] listData2, int[] expected){
+    public void print(int test, int[] listData1, int[] listData2, int[] expected){
         Solution solution = new Solution();
 
         ListNode l1 = new ListNode();
