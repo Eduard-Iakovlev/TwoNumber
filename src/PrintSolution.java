@@ -6,8 +6,7 @@ public class PrintSolution {
         ListNode l2 = new ListNode();
         ListNode expectedList = new ListNode();
         ListNode listNode = new ListNode();
-        ListNode result = solution.addTwoNumbers(l1, l2);
-
+        
         
         listNode.initList(l1, listData1);
         listNode.initList(l2, listData2);
@@ -17,6 +16,7 @@ public class PrintSolution {
         System.out.println(" list 1 = " + listNode.toString(l1, ""));
         System.out.println(" list 2 = " + listNode.toString(l2, ""));
         System.out.println(" Expected: " + listNode.toString(expectedList, ""));
+        ListNode result = solution.addTwoNumbers(l1, l2);
         System.out.println(" Actual result: " + listNode.toString(result, ""));
         System.out.println("\n------------ Проверка ------------");
         System.out.println(listNode.printCheck(result, expectedList));
