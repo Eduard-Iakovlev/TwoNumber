@@ -32,5 +32,5 @@ public class App {
         printSolution.print(test, listData1, listData2, expected);
 
 
-}
+    }
 }
