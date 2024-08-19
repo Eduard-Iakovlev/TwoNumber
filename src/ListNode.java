@@ -17,10 +17,10 @@ public class ListNode {
 
       public String toString(ListNode list, String listPrint){
        ListNode current = list;
-        while(current.next != null){
-            listPrint += String.valueOf(current.next.val);
-            current = current.next;
+        while(current != null){
+            listPrint += String.valueOf(current.val);
             if(current.next != null) listPrint += "->";
+            current = current.next;
         }
         
      
